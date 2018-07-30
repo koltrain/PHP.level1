@@ -1,0 +1,55 @@
+<html>
+<head>
+    <meta charset='utf-8' />
+    <script src="/js/jquery/jquery-3.3.1.min.js"></script>
+    <script defer src="/js/fontawesome/all.js"></script>
+</head>
+<body>
+
+
+<a class="btn_2 CopyLinkStyle"  href="javascript:void(0);" data-position="top">Копировать ссылку</a>
+<div class="top" style="display: none;" id="success-msg" >Ссылка успешно скопирована</div>
+<div class="top" style="display: none;" id="danger-msg" >Ссылка не смогла копироваться</div>
+
+<script language="JavaScript">
+function copyTextToClipboard(text, elem) {
+  var textArea = document.createElement("textarea");
+
+  // Ensure it has a small width and height. Setting to 1px / 1em
+  // doesn't work as this gives a negative w/h on some browsers.
+  textArea.style.width = '2em';
+  textArea.style.height = '2em';
+
+ textArea.value = text;
+
+  document.body.appendChild(textArea);
+
+  textArea.select();
+  try {
+    var position = elem.data('position');
+    var successful = document.execCommand('copy');
+//    var msg = successful ? '<b>Выполнено</b>' : '<b>Не выполнено</b>';
+    $("." + position + "#success-msg").show().delay(5000).fadeOut();
+
+  } catch (err) {
+
+  $("." + position + " #danger-msg").show().delay(5000).fadeOut();
+
+  }
+  document.body.removeChild(textArea);
+}
+/*
+function CopyLink() {
+  copyTextToClipboard(location.href, $(this));
+}
+*/
+$(document).on('click', '.btn_2', function () {
+    copyTextToClipboard(location.href, $(this));
+});
+
+</script>
+<div class="knopki">
+<a class="btn_2 knopka knopkaCopy" style="padding: 7px;border: 0; margin-left: 0;" href="javascript:void(0);" data-position="bottom">Копировать ссылку</a>
+</div>
+<div class="bottom" style="display: none;" id="success-msg" style="text-align: right;">Ссылка успешно скопирована</div>
+<div class="bottom" style="display: none;" id="danger-msg" style="text-align: right;">Ссылка не смогла копироваться</div>

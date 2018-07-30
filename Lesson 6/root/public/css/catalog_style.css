@@ -1,0 +1,183 @@
+body {
+	background-color: #f8f8f8;
+}
+.menu {
+	padding-left: 0;
+	list-style-type: none;
+	margin: 30px auto;
+	text-align: center;
+	position: relative;
+}
+
+.menu_list {
+	display: inline-block;
+}
+
+.menu_list_link {
+	display: block;
+	text-decoration: none;
+	color: darkturquoise;
+	font-family: Arial;
+	font-size: 20px;
+	padding: 10px 20px;
+	background-color: white;
+	border-radius: 5px;
+	margin: 5px 0;
+}
+
+.item_prev_link {
+	width: 250px;
+	text-decoration: none;
+	display: block;
+	padding: 10px;
+	background-color: cadetblue;
+	color: white;
+	margin: 15px;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.item_prev_link:hover {
+	background-color: yellow;
+	color: darkcyan;
+}
+
+.item_prev_link:active {
+	background-color: turquoise;
+}
+
+.item_prev_link img {
+	max-width: 200px;
+	height: 200px;
+	display: block;
+	margin: 5px auto;
+}
+
+.menu_list_link:hover {
+	background-color: lightyellow;
+}
+
+.menu_list_link:active {
+	background-color: yellow;
+}
+
+.edit {
+	font-size: 24px;
+	text-decoration: none;
+	line-height: 24px;
+	margin: 0 5px;
+	border: 2px solid lightyellow;
+	color: darkturquoise;
+}
+
+.edit:hover {
+	border-color: yellow;
+}
+
+.edit:active {
+	border-color: burlywood;
+}
+
+.navigation_link {
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: darkturquoise;
+	font-family: Arial;
+	font-size: 20px;
+	padding: 10px 20px;
+	background-color: white;
+	border-radius: 5px;
+	margin: 5px;
+}
+.navigation_link:hover {
+	background-color: lightyellow;
+}
+
+.navigation_link:active {
+	background-color: yellow;
+}
+
+.uploaded_img {
+	display: block;
+	float: right;
+	max-width: 40%;
+	max-height: 300px;
+}
+
+/*FORM*/
+form {
+	display: block;
+	max-width: 1200px;
+	background-color: turquoise;
+	padding: 30px 15px;
+}
+
+.edit_input, .edit_select {
+	display: block;
+	width: 50%;
+	padding: 5px;
+	margin: 5px;
+}
+
+.edit_short_desc {
+	width: 50%;
+	padding: 5px;
+	display: block;
+	margin: 5px;
+	height: 50px;
+}
+.edit_long_desc {
+	width: 50%;
+	padding: 5px;
+	display: block;
+	margin: 5px;
+	height: 100px;
+}
+.upload_input, .upload_select {
+	display: inline-block;
+	width: 47%;
+	padding: 5px;
+	margin: 5px;
+}
+
+.upload_short_desc {
+	width: 96%;
+	padding: 5px;
+	display: block;
+	margin: 5px auto;
+	height: 30px;
+}
+.upload_long_desc {
+	width: 96%;
+	padding: 5px;
+	display: block;
+	margin: 5px auto;
+	height: 50px;
+}
+.upload_file {
+	color: floralwhite;
+	font-size: 15px;
+}
+.delete {
+	background-color: darkred;
+	color: white;
+	font-size: 24px;
+	width: 150px;
+	display: block;
+	margin: 5px auto;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+}
+.delete:hover {
+	background-color: red;
+}
+.delete:active {
+	background-color: orangered;
+}
+
+.accepted {
+	display: block;
+	height: 15px;
+}

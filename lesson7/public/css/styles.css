@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main_head {
+    height: 100px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+.container_head {
+    max-width: 1200px;
+    text-align: right;
+    vertical-align: middle;
+    color: #333;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #222;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.error_msg {
+    font-weight: bold;
+    color: red;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    padding-bottom: 20px;
+}
+
+.image {
+    align-self: end;
+    text-align: center;
+    font-weight: bold;
+}
+
+.image div > img {
+    border: 1px #999 solid;
+}
+
+.manager-window {
+    margin: 0 auto;
+    width: 800px;
+    height: 500px;
+    border: 1px black solid;
+}
+
+.folder-items {
+    padding: 10px;
+}
+
+thead {
+    font-weight: bold;
+    color: #333;
+}
+
+tbody {
+    color: #444;
+}
+
+tbody a {
+    color: blue;
+    text-decoration: none;
+}
+
+tbody a:hover {
+    font-weight: bold;
+    color: darkblue;
+}
+
+tfoot {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+
+a, .del-link {
+    color: #555;
+    font-weight: bold;
+}
+
+a:hover, .del-link:hover {
+    color: #999;
+    font-weight: bold;
+}
+
+a:active, .del-link:active {
+    color: #222;
+    font-weight: bold;
+}
+
+a.btn-edit {
+    color: orange;
+}
+
+a.btn-edit:hover {
+    color: darkorange;
+}
+
+h2 {
+    text-align: center;
+}
+
+.breads-link {
+    color: #666;
+}
+
+.breads-link:hover {
+    color: #999;
+}
+
+.bread-link:active{
+    color: #333;
+}
+
+.categories, .items {
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 720px;
+}
+
+.category, .item {
+    justify-self: center;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    border: 1px #555 solid;
+    border-radius: 5px;
+}
+
+.category a, .item a {
+    margin: 10px 0 5px 0;
+    color: #555;
+    display: block;
+}
+
+.category-add a, .item-add a {
+    margin-top: 28px;
+}
+
+.category-action, .item-action {
+    display: inline !important;
+}
+
+.category a:hover, .item a:hover{
+    color: #999;
+}
+
+.category a:active, .item a:active {
+    color: #222;
+}
+
+.add-form div {
+    text-align: left;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.add-form div input[type="text"], input[type="email"], input[type="password"], .add-form div textarea{
+    border: 1px #999 solid;
+    border-radius: 5px;
+    width: 350px;
+    height: 25px;
+    outline: none;
+    margin: 5px 0 5px 0;
+    padding-left: 5px;
+}
+
+.add-form div textarea {
+    height: 100px;
+}
+
+.add-form div button, .btn {
+    height: 30px;
+    background-color: #08D092;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 3px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-form div button:hover {
+    background-color: #05865e;
+}
+
+.add-form div button:active {
+    background-color: #15f6b0;
+}
+
+.item_info {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.item_image {
+    justify-self: center;
+}
+
+.item_image img {
+    max-width: 500px;
+}
+
+.item_description {
+    text-align: left;
+}
+
+.item_description input[type="number"] {
+    width: 50px;
+}
+
+.item-feedbacks {
+    max-width: 1024px;
+    margin: 20px auto;
+    text-align: center;
+}
